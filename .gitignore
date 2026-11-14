@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Environnement virtuel
+.venv/
+venv/
+
+# Variables d'environnement
+.env
+
+# Données locales générées par l'app (app/storage.py)
+data/
+
+# Outils / IDE
+.pytest_cache/
+.vscode/
+.idea/
