@@ -58,7 +58,7 @@ def update_issue(issue_id: str, payload: IssueUpdate):
 
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Issue not found")
 
-@router.delete("/{issue_id}", response_model=IssueOut)
+@router.delete("/{issue_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_issue(issue_id: str):
     issues = load_data()
 
